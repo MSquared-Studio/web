@@ -56,8 +56,8 @@ or follow us on <b>Telegram</b></p>
             <div class="tags" id="tags"></div>
             <p id="desc"></p>
             <div class="control-btns">
-                <div class="btn" id="prev"><img src="/img/arrow-left.svg" alt="">Prev</div>
-                <div class="btn" id="next">Next<img src="/img/arrow.svg" alt=""></div>
+                <div class="btn" id="prev"><img src="img/arrow-left.svg" alt="">Prev</div>
+                <div class="btn" id="next">Next<img src="img/arrow.svg" alt=""></div>
             </div>
         </div>
     `
