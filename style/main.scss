@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+*{
+  font-family: "Jersey 15",sans-serif;
+  transition: transform 0.3s ease;
+}
+
+html{
+  background-color: black;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-image: url('../img/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:hover{
+    transform: scale(0.99);
+  }
+}
+
+h3{
+  font-size: 28px;
+}
+h2{
+  font-size: 35px;
+}
+h1{
+  font-size: 50px;
+}
+
+b{
+  color: #FF4A4A;
+}
+
+p,li{
+  font-size: 24px;
+  text-align: center;
+}
+
+header{
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+  align-items: center;
+  h3{
+    &:hover{
+      transform: scale(1.1);
+    }
+    cursor: pointer;
+  }
+  img{
+    &:hover{
+      transform: scale(1.1);
+    }
+    cursor: pointer;
+  }
+}
+
+.main{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  .content{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.hero{
+  img{
+    &:hover{
+      transform: scale(1.03);
+    }
+  }
+  h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &:hover{
+    transform: scale(1.02);
+  }
+  }
+  
+  .socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    &:hover{
+      transform: scale(1.02);
+    }
+    a{
+      &:hover{
+        transform: scale(1.05);
+      }
+      img{
+        height: 50px
+      };
+    }
+  }
+}
+
+.about{
+  h1{
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  p{
+    width: 750px;
+    &:hover{
+      transform: scale(1.02);
+    }
+  }
+}
+
+.philosophy{
+  h1{
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  p{
+    width: 750px;
+    &:hover{
+      transform: scale(1.02);
+    }
+  }
+}
+
+.join{
+  h1{
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+
+  .container{
+    display: flex;
+    gap: 50px;
+
+    .socials{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .layout{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        img{
+          height: 100px;
+        }
+
+        a{
+          &:hover{
+            transform: scale(1.1);
+          }
+        }
+
+        &:hover{
+          transform: scale(1.02);
+        }
+      }
+    }
+  }
+
+  p,li{
+    width: 650px;
+    &:hover{
+      transform: scale(1.02);
+    }
+  }
+  li{
+    list-style-type: disc;
+    margin-left: 50px;
+  }
+}
+
+.projects{
+  h1,h2{
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+  p{
+    // width: 750px;
+    font-size: 22px;
+    &:hover{
+      transform: scale(1.02);
+    }
+    max-height: 165px;
+    min-height: 165px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    padding-right: 5px;
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #FF4A4A;
+      border-radius: 10px;
+    }
+
+    scrollbar-width: thin;
+    scrollbar-color: #FF4A4A #1a1a1a;
+  }
+  img{
+    border: 3px solid #FF4A4A;
+    border-radius: 15px;
+    &:hover{
+      transform: scale(1.02);
+    }
+    max-height: 350px;
+    max-width: 90%;
+  }
+  h2{
+    margin-top: 10px;
+  }
+  .tags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    &:hover{
+      transform: scale(1.02);
+    }
+
+    .tag{
+      border: 3px solid #bebebe;
+      color: #bebebe;
+      background-color: #080808;
+      border-radius: 10px;
+      padding: 0 10px;
+      font-size: 20px;
+
+      &:hover{
+        transform: scale(1.05);
+      }
+
+      &#indev{
+        border: 3px solid #FF4A4A;
+        color: #FF4A4A;
+        background-color: #140B0B;
+      }
+      &#public{
+        border: 3px solid #4AFF50;
+        color: #4AFF50;
+        background-color: #0B140B;
+      }
+    }
+  }
+  .control-btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    // margin-bottom: 10px;
+
+    &:hover{
+      transform: scale(1.02);
+    }
+
+    .btn{
+      display: flex;gap: 5px;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid #ffffff;
+      color: #ffffff;
+      background-color: #080808;
+      border-radius: 20px;
+      padding: 5px 50px;
+      font-size: 20px;
+      cursor: pointer;
+
+      &:hover{
+        transform: scale(1.05);
+      }
+
+      img{
+        border: none;
+        height: 30px;
+      }
+
+      &#prev{
+        border: 3px solid #FF4A4A;
+        color: #FF4A4A;
+        background-color: #140B0B;
+      }
+    }
+  }
+}
+
+.about p, .philosophy p, .join p, .join li, .projects p {
+  width: 90% !important;
+  max-width: 750px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+@media (max-width: 1250px) {
+  body {
+    max-height: none;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .join .container {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 30px;
+    
+    .socials {
+      width: 100%;
+      .icons {
+        justify-content: center;
+      }
+    }
+  }
+
+  .about p, .philosophy p, .join p, .join li, .projects {
+    max-width: 95vw !important;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  body{
+    flex-direction: column-reverse;
+  }
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    h3 { font-size: 28px; }
+    img { height: 55px; }
+  }
+
+  .about, .philosophy {
+    padding: 40px 15px;
+    h1 { font-size: 45px; }
+    p { font-size: 24px; }
+  }
+
+  .join {
+    padding: 30px 15px;
+    h1 { font-size: 45px; }
+    p, li { font-size: 22px; }
+    li { 
+      // list-style-position: inside; 
+      margin-left: 0; 
+      text-align: left;
+      // list-style-type: none;
+    }
+    .socials .icons img { height: 80px; }
+  }
+
+  .projects{
+    h1 { font-size: 45px; }
+    // h2 { font-size: 32px; }
+    p, li { font-size: 22px; }
+    .control-btns{
+      width: 90%;
+      justify-content: space-between;
+      // gap: 50px;
+      .btn{
+        padding: 15px 20px;
+        // border-radius: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    gap: 12px;
+    h3 { font-size: 20px; }
+    img { height: 40px; }
+  }
+}
