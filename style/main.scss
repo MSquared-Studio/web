@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+@font-face {
+    font-family: 'Pixellari';
+    src: url('../fonts/Pixellari.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    size-adjust: 85%;
+}
 
 *{
-  font-family: "Jersey 15",sans-serif;
+  font-family: "Jersey 15","Pixellari",sans-serif;
   transition: transform 0.3s ease;
 }
 
@@ -18,6 +25,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;;
   color: white;
+  text-align: center;
 
   display: flex;
   flex-direction: column;

@@ -1,6 +1,6 @@
 export const tags = {
-    'indev': 'in development',
-    'public': 'public',
-    'prototype': 'prototype',
-    'trust': 'trust needed'
+    'indev': 'в разработке',
+    'public': 'публичный',
+    'prototype': 'прототип',
+    'trust': 'требуется доверие'
 }
