@@ -248,7 +248,7 @@ header img {
 .projects .tags .tag:hover {
   transform: scale(1.05);
 }
-.projects .tags .tag#indev {
+.projects .tags .tag#indev, .projects .tags .tag#remade {
   border: 3px solid #FF4A4A;
   color: #FF4A4A;
   background-color: #140B0B;

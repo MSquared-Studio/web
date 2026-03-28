@@ -16,5 +16,11 @@ export const projects = [
         img: 'banner.png',
         tags: ['indev','trust'],
         desc: `<b>M2Hub</b> - это <b>сервис</b>, который позволяет <b>проектам M²Studio</b> общатся <b>между собой</b>. Этот "Хаб" также предоставляет <b>публичный API</b> для интеграции <b>сервисов M²Studio</b> в <b>ваши собственные проекты</b>.`
+    },
+    {
+        name: "RML",
+        img: 'projects/rml.webp',
+        tags: ['prototype','public','remade'],
+        desc: `<b>RML</b> - это лаунчер <b>Minecraft</b>, написанный на <b>Rust</b>. Планировалось сделать из него <b>универсальную утилиту</b> для всего.`
     }
 ]
